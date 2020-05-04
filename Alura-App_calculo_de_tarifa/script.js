@@ -25,10 +25,7 @@ function adcElemento (valor) {
     }
 }
 
-//Função para limpar input
-function clearField(){
-    document.getElementsByTagName('input').value = '';
-}
+
 
 //Função "onclick" para calcular valor p/usuário
 function calcular(){
@@ -47,8 +44,6 @@ function calcular(){
         adcElemento(valorCorrida);
 
         botaoCalcular.innerHTML = 'Calcular novamente';
-
-        clearField();
     }else{
         alert('Por favor, preencha os campos corretamente e tente novamente.');
     }

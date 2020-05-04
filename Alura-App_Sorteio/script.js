@@ -10,7 +10,6 @@ function sortear(){
         } else{
             paragrafoResultado.innerHTML += `<br>Não foi dessa vez :( <br><br> O número certo era ${numerocerto}. Tente novamente.`;
         }
-
         botaoSorteio.innerHTML = "Tentar novamente"
     } else{
         paragrafoResultado.innerHTML = 'Por favor, informe seu número da sorte, entre 1 e 10, e tente novamente.';

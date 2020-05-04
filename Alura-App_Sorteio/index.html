@@ -8,10 +8,10 @@
 </head>
 <body> 
     <label for="inputNumero"> Seu número da sorte (de 1 a 10): </label>
-    <input id="inputNumero" type="text">
+    <input id="inputNumero" type="text" onfocus="this.value = ''">
     
     <p id="paragrafoResultado">
-        Clique no botão para participar do sorteio de uma corrida grátis
+        Preencha acima e clique no botão abaixo para participar sortear um número.
     </p>
       
     <button id="botaoSorteio" onclick="sortear()">  
