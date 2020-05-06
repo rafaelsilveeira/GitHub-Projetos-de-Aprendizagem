@@ -4,15 +4,21 @@ function gerar(){
     }
     
     listaLinks = [
-        '1 - https://caelum.github.io/quarentenadev/libCertificado.js', 
-        '2 - https://caelum.github.io/quarentenadev/libCertificado.js', 
-        '3 - https://caelum.github.io/quarentenadev/libCertificado.js'
+        'https://codepen.io/rafaelsilveeira/full/KKdPgOQ', 
+        'https://codepen.io/rafaelsilveeira/full/LYpRYJJo.js', 
+        'https://codepen.io/rafaelsilveeira/full/JjYyvEY'
+    ];
+    atividade = [
+        'Calculadora de tarifa para app de mobilidade',
+        'Calculadora de IMC',
+        'Sorteador de número aleatório'
     ];
     
     listalinkscomhtml = "";
-    for(cont=0;cont<=listaLinks.length;cont++){
-        link = listaLinks[cont];
-        listalinkscomhtml += `<li>${link}</li>`;
+    for(cont=0;cont<listaLinks.length;cont++){
+        let link = listaLinks[cont];
+        let projeto = atividade[cont];
+        listalinkscomhtml += `<li><a href = "${link}"> ${projeto}</a></li>`;
     }
 
     document.body.innerHTML = `
