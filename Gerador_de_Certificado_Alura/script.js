@@ -10,7 +10,7 @@ function gerar(){
         'https://codepen.io/rafaelsilveeira/full/vYNZwev'
     ];
     atividade = [
-        'Calculadora de tarifa para app de mobilidade',
+        'Calculadora de tarifa',
         'Calculadora de IMC',
         'Sorteador de número aleatório',
         'Botões de like - Face e Instagram'
@@ -20,7 +20,7 @@ function gerar(){
     for(cont=0;cont<listaLinks.length;cont++){
         let link = listaLinks[cont];
         let projeto = atividade[cont];
-        listalinkscomhtml += `<li><a href = "${link}" target='blank'> ${projeto}</a></li>`;
+        listalinkscomhtml += `<li><strong>${projeto}:</strong><br><a href = "${link}" target='blank' style="color:#48CCCA">Link Codepen</a></li>`;
     }
 
     document.body.innerHTML = `
