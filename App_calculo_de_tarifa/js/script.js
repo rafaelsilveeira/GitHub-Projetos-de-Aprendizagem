@@ -20,8 +20,9 @@ function adcElemento (valor) {
         divNova.setAttribute('id','divResultado');
         divNova.innerHTML = 'Total: R$ ' + padronizaMoeda(valor); 
         // adiciona o novo elemento criado antes do botão 
-        let button = document.getElementById("botaoCalcular"); 
-        document.body.insertBefore(divNova, button);
+        let button = document.getElementById("botaoCalcular");
+        let conteudo = document.querySelector('.conteudo')
+        conteudo.insertBefore(divNova, button);
     }
 }
 

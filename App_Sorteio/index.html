@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>App Sorteio</title>
 </head>
 <body> 
-    <label for="inputNumero"> Seu número da sorte (de 1 a 10): </label>
-    <input id="inputNumero" type="text" onfocus="this.value = ''">
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="../Calculo_de_IMC/index.html">Calculadora de IMC</a></li>
+                <li><a href="../tabuada/index.html">Tabuada</a></li>
+                <li><a href="#" id="selected">Sorteador de números</a></li>
+                <li><a href="../App_calculo_de_tarifa/index.html">Calculadora de tarifa</a></li>
+                <li><a href="../Alura-Botao_de_likes/index.html">Botão de Likes</a></li>
+                
+            </ul>
+        </nav>
+    </header>
     
-    <p id="paragrafoResultado">
-        Preencha acima e clique no botão abaixo para participar sortear um número.
-    </p>
-      
-    <button id="botaoSorteio" onclick="sortear()">  
-      Sortear
-    </button>
-
-
-    <script src="script.js"></script>
+    <div class="conteudo">
+        <label for="inputNumero"> Seu número da sorte (de 1 a 10): </label>
+        <input id="inputNumero" type="text" onfocus="this.value = ''">
+        
+        <p id="paragrafoResultado">
+            Preencha acima e clique no botão abaixo para participar sortear um número.
+        </p>
+        
+        <button id="botaoSorteio" onclick="sortear()">  
+        Sortear
+        </button>
+    </div>    
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -3,23 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>App tipo Uber</title>
 </head>
 <body>
-  <label for="inputDistancia"> Distância em km: </label>
-  <input id="inputDistancia" type="text" onfocus="this.value = ''">
-  
-  <label for="inputTempo"> Tempo em min: </label>
-  <input id="inputTempo" type="text" onfocus="this.value = ''">
+    <header>
+      <nav class="menu">
+          <ul>
+              <li><a href="../Calculo_de_IMC/index.html">Calculadora de IMC</a></li>
+              <li><a href="../tabuada/index.html">Tabuada</a></li>
+              <li><a href="../App_Sorteio/index.html" >Sorteador de números</a></li>
+              <li><a href="#" id="selected">Calculadora de tarifa</a></li>
+              <li><a href="../Alura-Botao_de_likes/index.html">Botão de Likes</a></li>
+          </ul>
+      </nav>
+    </header>
 
-  
-  
-  <button id="botaoCalcular" onclick="calcular()">
-    Calcular
-  </button>
+    <div class="conteudo">
+      <label for="inputDistancia"> Distância em km: </label>
+      <input id="inputDistancia" type="text" onfocus="this.value = ''">
+      
+      <label for="inputTempo"> Tempo em min: </label>
+      <input id="inputTempo" type="text" onfocus="this.value = ''">
 
+      
+      
+      <button id="botaoCalcular" onclick="calcular()">
+        Calcular
+      </button>
 
-  <script src="script.js"></script>
+    </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,25 +1,75 @@
 * {
-  color: #121212;
+    color: #121212;
+    font-family: verdana;
 }
-
-
-html {
-  height: 100%;
-  width: 100%;
+  
+body{
+  /*Determina a largura máxima do conteúdo (desktop)*/
+  min-width: 360px;
+  max-width: 1128px;
+  min-height: 840px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 122, 102, 0.25);
+  background: rgba(10,0,200,.25);
 }
 
-body {
+/*BARRA DE MENU*/
+header{
+  position: fixed;
+  top: 25px;
+  left: 40px;
+  width: 100%;
+  max-height: 80px;
+}
+.menu {
+  height: inherit;
+  align-items: center;
+  display: flex;
+  float: left;
+}
+.menu ul {
+  list-style:none;
+  height: inherit;
+  padding-left: 40px;
+}
+.menu ul li { 
+  display: inline; 
+  height: inherit;
+}
+.menu ul li a {  
+  border-radius: 5px;
+  display: inline-block;
+  margin: 5px 0;
+  padding: 5px 10px;
+  
+  /* visual do link */
+  background-color:#FFF;
+  color: #324474;
+  font-size: 11px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.menu ul li a:hover {
+  background-color:#D6D6D6;
+  border-bottom:2px solid #324474;
+  color: #6D6D6D;
+}
+#selected{
+  background-color:#324474;
+  color: whitesmoke;
+}
+/*Fim do menu*/
+
+.conteudo {
   width: 280px;
   height: 620px;
   padding: 50px 1em;
   box-sizing: border-box;
-  overflow: hidden;
-  position:  relative;
- 
+  overflow: auto;
+  position:  fixed;
+  
   font-family: Helvetica, Arial, sans-serif;
   
   color: #454545;
@@ -40,14 +90,14 @@ body {
       transparent calc(100% - 5px), 
       rgba(0,0,0,.2) calc(100% - 2px)
     ),
-     linear-gradient(
+      linear-gradient(
       to bottom,
       transparent, 
       transparent calc(100% - 55px), 
       rgba(0,0,0,.2) calc(100% - 52px),
       rgba(0,0,0,.2) calc(100% - 52px)
     ),
-    url('https://miro.medium.com/max/4064/1*qYUvh-EtES8dtgKiBRiLsA.png');
+    url('https://2.bp.blogspot.com/-dA2BkuLxGzs/V7-WCAs2e7I/AAAAAAAAAXo/7nA7PfqJqMA4_PTT8JIqUcLiRPYCGM-wACLcB/s1600/trevos.jpg');      
   
   background-size: 
     100% 100%, 
@@ -56,12 +106,12 @@ body {
     cover;
   
   background-position: 
-     0 0,
-     0 0,
-     0 0,
-     cover;
+      0 0,
+      0 0,
+      0 0,
+      cover;
     
-   background-repeat: no-repeat;
+    background-repeat: no-repeat;
 }
 
 input {
@@ -75,10 +125,11 @@ input {
   left: -1rem;
   z-index: 1;
 
-  padding-left: 7.2em;
+  padding-left: 14em;
   
+  color: green;
   font-size: 15px;
-  font-weight: lighter;
+  font-weight: bolder;
   
   box-sizing: border-box;
 }
@@ -103,19 +154,6 @@ label {
 
 }
 
-#divResultado {
-  font-family: Arial, Helvetica, sans-serif;
-  background: rgba(255, 255, 255, 0.9);
-  margin: auto;
-  height: 6em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 4px;
-  box-shadow: 0 0 12px 2px rgba(0,0,0,.25);
-}
-
 button {
   width: 100%;
   padding: 1.5em 0;
@@ -125,6 +163,7 @@ button {
   
   cursor: pointer;
   
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1em;
   font-weight: bold;
   text-transform: uppercase;
@@ -152,11 +191,13 @@ button:active {
 }
 
 p {
-  background: #FFF;
+  background: rgba(255, 255, 255, 0.9);
+  margin-top: 2em;
   padding: 1em 2em;
   height: 275px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   box-shadow: 0 0 12px 2px rgba(0,0,0,.25);
 }

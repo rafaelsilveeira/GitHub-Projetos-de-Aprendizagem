@@ -35,42 +35,45 @@ body{
 
 /*BARRA DE MENU*/
 header{
-  width: 100%;
+  width: 100vw;
   height: 40px;
   margin-top: 2.5em;
   margin-bottom: 2em;
 }
-#menu {
-  width: 74.468085106383%; /*840px / 1128px */
+.menu {
+  align-items: center;
+  display: flex;
   float: left;
 }
-#menu ul {
-  padding:0px;
-  margin:0px;
+.menu ul {
   list-style:none;
 }
-#menu ul li { 
+.menu ul li { 
   display: inline; 
 }
-#menu ul li a {
-  padding: 11px 10px 0;
-  display: inline-block;
-  height: 3em;
+.menu ul li a {  
   border-radius: 0.5em;
+  display: inline-block;
+  margin: 5px 0;
+  padding: 5px 10px;
   
   /* visual do link */
-  font-size: 1.3em;
-  font-weight: bolder;
   background-color:#FFF;
   color: #324474;
+  font-size: 1.3em;
+  font-weight: bolder;
   text-decoration: none;
-  border-bottom:3px solid #FFF;
 }
-#menu ul li a:hover {
+.menu ul li a:hover {
   background-color:#D6D6D6;
-  color: #6D6D6D;
   border-bottom:2px solid #324474;
+  color: #6D6D6D;
 }
+#selected{
+  background-color:#324474;
+  color: whitesmoke;
+}
+/*Fim do menu*/
 
 /*TÍTULO*/
 .caixa {
