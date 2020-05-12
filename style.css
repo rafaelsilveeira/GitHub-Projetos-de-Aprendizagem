@@ -51,4 +51,24 @@ a{
     font-weight: lighter;
 }
   
-  
+footer {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 50px;
+    font-weight: bold;
+
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding-left: 0;
+}  
+li{
+    list-style: none;
+}
+li:hover {
+
+    text-shadow: -4px 4px 7px rgb(114, 114, 114);
+    color: whitesmoke;
+}
