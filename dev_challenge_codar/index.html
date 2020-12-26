@@ -7,40 +7,53 @@
     <title>Codar - Dev Challenge</title>
 </head>
 <body>
-    <header>
-        <img class="logo" src="./assets/Logo Rafaflix.png" alt="logotipo Rafaflix">
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><button>Login</button></li>
-            </ul>
-        </nav>
+    <header class="flex-container">
+        <div class="flex-item">
+            <img class="logo" src="./assets/Logo Rafaflix.png" alt="logotipo Rafaflix">
+        </div>
+        <div class="flex-item">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><button>Login</button></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section id="inicio">
-        <img src="./assets/video_call.png" alt="ilustração de uma chamada de vídeo">
-        <h2>Alavanque seu negócio com um</h2>
-        <h1>Website incrível</h1>
-        <button>Solicitar Orçamento</button>
+    <section class="flex-container" id="inicio">
+        <div class="flex-item one-half">
+            <img src="./assets/video_call.png" alt="ilustração de uma chamada de vídeo">
+        </div>
+        <div class="flex-item one-half cta-orcamento">
+            <h2>Alavanque seu negócio com um</h2>
+            <h1>Website incrível</h1>
+            <br>
+            <button>Solicitar Orçamento</button>
+        </div>
     </section>
-    <section id="servicos">
-        <ul>
-            <li class="lista-servicos">Domínio personalizado</li>
-            <li class="lista-servicos">Hospedagem</li>
-            <li class="lista-servicos">Site responsivo</li>
-            <li class="lista-servicos">Redes sociais</li>
-            <li class="lista-servicos">Chat online</li>
-            <li class="lista-servicos">Blog integrado</li>
-        </ul>
-        <img src="./assets/coding_.png" alt="ilustração de mãos digitando em um computador">
-        <div>
+    <section class="flex-container" id="servicos">
+        <div class="flex-item one-half lista">
+            <ul>
+                <li class="lista-servicos">Domínio personalizado</li>
+                <li class="lista-servicos">Hospedagem</li>
+                <li class="lista-servicos">Site responsivo</li>
+                <li class="lista-servicos">Redes sociais</li>
+                <li class="lista-servicos">Chat online</li>
+                <li class="lista-servicos">Blog integrado</li>
+            </ul>
+        </div>
+        <div class="flex-item one-half">
+            <img src="./assets/coding_.png" alt="ilustração de mãos digitando em um computador">
+        </div>
+        <div class="flex-item one cta-ligacao">
             <h2>Nossa equipe está à disposição!</h2>
             <input type="tel" name="telefone" id="telefone" placeholder="Celular">
             <button>Ligamos pra você</button>
         </div>
     </section>
-    <section id="depoimentos">
+    <section class="flex-container" id="depoimentos">
         <div class="box-depoimento">
             <img src="./assets/red-avatar.png" alt="avatar genérico">
             <p>Já tive experiências com outras 4 empresas da área e a Codar é sem sombra de dúvidas superior em todos os aspectos.</p>
@@ -62,7 +75,7 @@
             </p>
         </div>
     </section>
-    <footer>
+    <footer class="flex-container">
         <div class="one_fourth">
             <img src="./assets/Logo Rafaflix.png" alt="Logotipo Rafaflix">
             <p class="text-footer">

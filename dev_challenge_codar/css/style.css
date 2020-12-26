@@ -1,51 +1,106 @@
 *{
     font-family: 'Roboto', sans-serif;
+    font-size: 20px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+h1 {
+  color: #D6000D;
+  font-size: 2.5em;
+}
+
 header{
-    position: fixed;
-    width: 100vw;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 25px 20px;
+}
+
+button {
+  background-color: #D6000D;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px 35px;
+  width: fit-content;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+header.flex-container {
+  justify-content: space-between;
 }
 
 .logo {
-    max-width: 200px;
-    float: left;
+  max-width: 200px;
+  /*float: left;*/
 }
 
 .menu{
-    padding: 0.5em 1em;
-    top: 0;
-    z-index: 1;
-    float: right;
-    width: calc(100% - 220px);
-  }
+  padding: 0.5em 1em;
+  top: 0;
+  z-index: 1;
+  /*float: right;*/
+  /*width: calc(100% - 220px);*/
+}
   
-.menu ul {
+  .menu ul {
     display: flex;
     justify-content: flex-end;
   }
-  
-  .menu li{
-    background: none;
-    border-radius: 5px;
-    list-style: none;
-    margin: 0 1em 0;
-  }
-  
-  .menu a {
-    color: #D6000D;
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: background-color 0.2s, color 0.2s;
-  }
-  .menu a:active,
-  .menu a:hover{
-    background-color: limegreen;
-    border-radius: 03px;
-    color: black;
-    text-decoration: none;
-  }
+
+    .menu li{
+      list-style: none;
+      margin: 0 1em 0;
+    }
+
+      .menu a {
+        border-radius: 10px;
+        color: #000000;
+        display: block;
+        font-weight: 500;
+        padding: 10px 20px;
+        text-decoration: none;
+        transition: background-color 0.2s, color 0.2s;
+      }
+      .menu a:active,
+      .menu a:hover{
+        background-color: #D6000D;
+        border-radius: 10px;
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+section {
+  padding: 10% 5% 0;  
+}
+
+.one {
+  width: 100%;
+}
+.one-half {
+  width: 50%;
+}
+
+img {
+  max-width: 100%;
+  padding: 30px;
+}
+
+#inicio .cta-orcamento,
+#servicos .lista {
+  padding: 5%;
+}
+
+.cta-ligacao {
+  padding: 0 5%;
+}
