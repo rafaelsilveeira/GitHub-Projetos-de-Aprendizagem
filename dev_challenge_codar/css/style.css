@@ -11,12 +11,17 @@ h1 {
   font-size: 2.5em;
 }
 
-header{
-  background-color: #ffffff;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  padding: 25px 20px;
+h2 {
+  padding-bottom: 10px;
+}
+
+
+section {
+  padding: 10% 5% 0;  
+}
+
+footer {
+  padding: 0 5%;
 }
 
 button {
@@ -28,11 +33,48 @@ button {
   width: fit-content;
 }
 
+input {
+  background-color: #eaeaea;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.one {
+  width: 100%;
+}
+.one-half {
+  width: 50%;
+}
+.one-quarter {
+  max-width: 25%;
+}
+
+.ilustracao {
+  padding: 30px;
+}
+
+header{
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 25px 20px;
+  z-index: 1;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
+}
+
+.center {
   align-items: center;
 }
 
@@ -80,21 +122,6 @@ header.flex-container {
         text-decoration: none;
       }
 
-section {
-  padding: 10% 5% 0;  
-}
-
-.one {
-  width: 100%;
-}
-.one-half {
-  width: 50%;
-}
-
-img {
-  max-width: 100%;
-  padding: 30px;
-}
 
 #inicio .cta-orcamento,
 #servicos .lista {
@@ -103,4 +130,83 @@ img {
 
 .cta-ligacao {
   padding: 0 5%;
+}
+
+.checkmark li {
+  font-size: 1em; /* this determines the size of the list text and therefore checkmark size*/
+  font-weight: bold;
+  list-style-type: none; /* remove default list style*/
+  margin-bottom: 1em; /* lists need to be able to breathe*/
+  padding: 0.25em 0 0 3.5em; /* make room for the circle*/
+  position: relative; /* because we want to position the circle in an absolute fashion*/
+}
+  .checkmark li:before {
+    content: " "; /* the circle itself is empty*/
+    display: block;
+    border: solid 0.8em #D6000D; /* create a colored area...*/
+    border-radius: .8em; /* ... and turn it into a circle*/
+    height: 0;
+    width: 0;
+    position: absolute; /* the circle is then put into place*/
+    left: 0.5em;
+    top: 40%; 
+    margin-top: -0.5em;
+  }
+  .checkmark li:after {
+    content: " ";
+    display: block;
+    width: 0.3em; /* the short bar of the mark is half as long as the long bar*/
+    height: 0.6em;
+    border: solid white;
+    border-width: 0 0.2em 0.2em 0; /* creates the inverted "L" shape*/
+    position: absolute;
+    left: 1em;
+    top: 40%;
+    margin-top: -0.2em;
+    -webkit-transform: rotate(45deg); /* tilts the shape*/
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }  
+
+
+.box-depoimento {
+  background-color: #eaeaea;
+  border-radius: 10px;
+  display: flex;
+  margin: 5px 25px;
+  width: 45%;
+  min-height: 201px;
+}
+.box-depoimento img {
+  max-width: 125px;
+  max-height: 125px;
+}
+.texto-depoimento {
+  padding: 20px;
+}
+.texto-depoimento .nome {
+  font-size: 1.3em;
+  margin-top: 0.8em;
+}
+.texto-depoimento .empresa {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  margin-top: 5%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+footer .one-quarter {
+  padding: 0 30px;
+}
+.redes-sociais {
+  text-align: center;
+}
+.redes-sociais img {
+  padding: 10px;
 }

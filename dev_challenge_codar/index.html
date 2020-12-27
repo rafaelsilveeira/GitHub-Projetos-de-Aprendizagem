@@ -7,7 +7,7 @@
     <title>Codar - Dev Challenge</title>
 </head>
 <body>
-    <header class="flex-container">
+    <header class="flex-container center">
         <div class="flex-item">
             <img class="logo" src="./assets/Logo Rafaflix.png" alt="logotipo Rafaflix">
         </div>
@@ -22,9 +22,9 @@
             </nav>
         </div>
     </header>
-    <section class="flex-container" id="inicio">
+    <section class="flex-container center" id="inicio">
         <div class="flex-item one-half">
-            <img src="./assets/video_call.png" alt="ilustração de uma chamada de vídeo">
+            <img class="ilustracao" src="./assets/video_call.png" alt="ilustração de uma chamada de vídeo">
         </div>
         <div class="flex-item one-half cta-orcamento">
             <h2>Alavanque seu negócio com um</h2>
@@ -33,81 +33,88 @@
             <button>Solicitar Orçamento</button>
         </div>
     </section>
-    <section class="flex-container" id="servicos">
+    <section class="flex-container center" id="servicos">
         <div class="flex-item one-half lista">
-            <ul>
-                <li class="lista-servicos">Domínio personalizado</li>
-                <li class="lista-servicos">Hospedagem</li>
-                <li class="lista-servicos">Site responsivo</li>
-                <li class="lista-servicos">Redes sociais</li>
-                <li class="lista-servicos">Chat online</li>
-                <li class="lista-servicos">Blog integrado</li>
+            <ul class="checkmark">
+                <li class="lista-servicos"> Domínio personalizado</li>
+                <li class="lista-servicos"> Hospedagem</li>
+                <li class="lista-servicos"> Site responsivo</li>
+                <li class="lista-servicos"> Redes sociais</li>
+                <li class="lista-servicos"> Chat online</li>
+                <li class="lista-servicos"> Blog integrado</li>
             </ul>
         </div>
         <div class="flex-item one-half">
-            <img src="./assets/coding_.png" alt="ilustração de mãos digitando em um computador">
+            <img class="ilustracao" src="./assets/coding_.png" alt="ilustração de mãos digitando em um computador">
         </div>
         <div class="flex-item one cta-ligacao">
             <h2>Nossa equipe está à disposição!</h2>
             <input type="tel" name="telefone" id="telefone" placeholder="Celular">
-            <button>Ligamos pra você</button>
+            <button>Ligamos para você</button>
         </div>
     </section>
-    <section class="flex-container" id="depoimentos">
-        <div class="box-depoimento">
-            <img src="./assets/red-avatar.png" alt="avatar genérico">
-            <p>Já tive experiências com outras 4 empresas da área e a Codar é sem sombra de dúvidas superior em todos os aspectos.</p>
-            <p class="nome">
-                Pedro Ferreira
-            </p>
-            <p class="empresa">
-                Construtora Minari
-            </p>
+    <section class="flex-container center" id="depoimentos">
+        <div class="box-depoimento one-half">
+            <img class="ilustracao" src="./assets/red-avatar.png" alt="avatar genérico">
+            <div class="texto-depoimento">
+                <p>Já tive experiências com outras 4 empresas da área e a Codar é sem sombra de dúvidas superior em todos os aspectos.</p>
+                <p class="nome">
+                    Pedro Ferreira
+                </p>
+                <p class="empresa">
+                    Construtora Minari
+                </p>
+            </div>
         </div>
-        <div class="box-depoimento">
-            <img src="./assets/red-avatar.png" alt="avatar genérico">
-            <p>Processos bem simples e criação de um site exatamente como a minha escola queria!</p>
-            <p class="nome">
-                Maria Rita
-            </p>
-            <p class="empresa">
-                Escola Criança Feliz
-            </p>
+        <div class="box-depoimento one-half">
+            <img class="ilustracao" src="./assets/red-avatar.png" alt="avatar genérico">
+            <div class="texto-depoimento">
+                <p>Processos bem simples e criação de um site exatamente como a minha escola queria!</p>
+                <p class="nome">
+                    Maria Rita
+                </p>
+                <p class="empresa">
+                    Escola Criança Feliz
+                </p>
+            </div>
         </div>
     </section>
     <footer class="flex-container">
-        <div class="one_fourth">
-            <img src="./assets/Logo Rafaflix.png" alt="Logotipo Rafaflix">
-            <p class="text-footer">
-                Criamos websites incríveis
-            </p>
+        <div class="one-quarter footer-1">
+            <div>
+                <img src="./assets/Logo Rafaflix.png" alt="Logotipo Rafaflix">
+                <p class="text-footer">
+                    Criamos websites incríveis
+                </p>
+            </div>
         </div>
-        <div class="one-fourth">
-            <p class="title-footer">
+        <div class="one-quarter footer-2">
+            <h2 class="title-footer">
                 Sobre
-            </p>
+            </h2>
             <p class="text-footer">
                 Amamos criar soluções e entregar sites incríveis
             </p>
         </div>
-        <div class="one_fourth">
-            <p class="title-footer">
+        <div class="one-quarter footer-3">
+            <h2 class="title-footer">
                 Contato
-            </p>
+            </h2>
             <p class="text-footer">
                 123 Av. Manjar - Nárnia
-            </p>
-            <p class="text-footer">
-                +55 96 2321-3131
-            </p>
-            <p class="text-footer">
-                contato@codar.com
+                <br>+55 96 2321-3131
+                <br>contato@codar.com
             </p>
         </div>
-        <div class="one_fourth">
-            <img src="./assets/facebook-icon-24px.png" alt="Ícone Facebook">
-            <img src="./assets/instagram-icon-24px.png" alt="Ícone instagram">
-            <img src="./assets/twitter-icon-24px.png" alt="Ícone Twitter">
+        <div class="one-quarter footer-4">
+            <h2 class="title-footer">
+                Redes Sociais
+            </h2>
+            <div class="redes-sociais">
+                <img src="./assets/facebook-icon-24px.png" alt="Ícone Facebook">
+                <img src="./assets/instagram-icon-24px.png" alt="Ícone instagram">
+                <img src="./assets/twitter-icon-24px.png" alt="Ícone Twitter">
+            </div>
         </div>
     </footer>
 </body>
