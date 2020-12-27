@@ -45,6 +45,7 @@ const interval = setInterval(()=>{
                 taxa -= 0.25;
                 button.innerHTML = taxa.toFixed(2) + "x"
                 button.setAttribute('data-rate', taxa);
+                console.log('diminui 0.25' + taxa);
             }
         });
 
@@ -56,6 +57,7 @@ const interval = setInterval(()=>{
                 taxa += 0.25;
                 button.innerHTML = taxa.toFixed(2) + "x"
                 button.setAttribute('data-rate', taxa);
+                console.log('aumentei 0.25' + taxa);
             }
         });
 
@@ -69,7 +71,7 @@ const interval = setInterval(()=>{
 
 
 
-
+// TAXA ESTÁ PASSANDO SEMPRE 1 - CORRIGIR
 function listenClick(taxa) {
     window.addEventListener('click', function(e){
         clickTarget = e.target.getAttribute('data-icon');
@@ -77,6 +79,9 @@ function listenClick(taxa) {
             rate = taxa;
             audios = document.querySelectorAll('audio');
             setAudiosRate(audios, rate);
+            console.log('botao play');
+            console.log('taxa: ' + taxa);
+            console.log('rate: ' + rate);
         }
     });
 }
