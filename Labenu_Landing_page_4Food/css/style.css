@@ -592,6 +592,7 @@ footer {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: flex-start;
+        text-align: initial;
     }
     header nav a {
         padding: 0;
