@@ -397,36 +397,51 @@ section.formulario{
   margin-top: 100px;
 }
 .formulario .container{
+  /* display: grid;
+  grid-template: 1fr / 1fr 2fr;
+  justify-content: center;
+  align-items: center; */
+  text-align: center;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #7BC212;
   box-shadow: 1px 2px 9px #00000057;
   border-radius: 20px;
-  padding: 20px 0px;
+  padding: 20px 10px;
   margin-top: -100px;
+  width: calc(90% - 20px);
+}
+
+.texto-form {
+  width: 30%;
 }
 
 form {
-  display: flex;
+  display: grid;
+  grid-template: 1fr / 3fr 3fr 1fr;
+  width: 65%;
 }
-.form-col-1, 
+/* .form-col-1, 
 .form-col-2, 
 .form-col-3{
   display: flex;
   align-items: center;
-}
+} */
 .form-col-1{
-  flex-flow: wrap;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr;
 }
 form input{
   padding: 10px 5px;
 }
 form textarea{
   padding: 5px;
+  height: calc(100% - 20px);
 }
 form input, form textarea, form button{
-  width: 100%;
+  width: 95%;
   border: none;
   border-radius: 5px;
   margin: 5px;
@@ -443,6 +458,7 @@ form button{
   background-color: #477800;
   fill: #7BC212;
   padding: 6px 12px;
+  height: calc(100% - 10px);
 }
 form button:hover{
   background-color: #253f00;
