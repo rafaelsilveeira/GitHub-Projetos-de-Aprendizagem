@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -10,7 +11,7 @@ html {
 }
 
 body{
-  width: 98.7vw;
+  width: 98.5vw;
   margin: auto;
 }
 
@@ -36,6 +37,7 @@ p{
   margin-right: auto;
   width: 98%;
   max-width: 1180px;
+  text-align: center;
 }
 
 .one-second{
@@ -57,7 +59,6 @@ p{
   position: fixed;
   bottom: 15px;
   right: 15px;
-  width: 15px;
   text-align: center;
 }
 .botao-topo a{
@@ -397,39 +398,57 @@ section.formulario{
   margin-top: 100px;
 }
 .formulario .container{
+  text-align: center;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #7BC212;
   box-shadow: 1px 2px 9px #00000057;
   border-radius: 20px;
-  padding: 20px 0px;
+  padding: 20px 10px;
   margin-top: -100px;
+  width: calc(90% - 20px);
+}
+
+.texto-form {
+  width: 30%;
 }
 
 form {
-  display: flex;
+  display: grid;
+  grid-template: 1fr / 3fr 3fr 1fr;
+  width: 65%;
 }
-.form-col-1, 
+
+#contato h2 {
+  margin: 0px;
+}
+/* .form-col-1, 
 .form-col-2, 
 .form-col-3{
   display: flex;
   align-items: center;
-}
-.form-col-1{
-  flex-flow: wrap;
-}
+} */
+/* .form-col-1{
+  display: grid;
+  grid-template: 1fr 1fr / 1fr;
+} */
 form input{
   padding: 10px 5px;
+  margin: 5px;
 }
 form textarea{
   padding: 5px;
+  margin-top: 5px;
+}
+form button{
+  margin: 5px;
 }
 form input, form textarea, form button{
-  width: 100%;
+  width: 95%;
   border: none;
   border-radius: 5px;
-  margin: 5px;
 }
 input, textarea{
   font-family: inherit;
@@ -443,6 +462,7 @@ form button{
   background-color: #477800;
   fill: #7BC212;
   padding: 6px 12px;
+  height: calc(100% - 10px);
 }
 form button:hover{
   background-color: #253f00;
@@ -511,7 +531,7 @@ footer a:hover{
     justify-content: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    height: 10vh;
+    height: 15vh;
   }  
   .logo {
     display: flex;
@@ -558,7 +578,17 @@ footer a:hover{
 
   .formulario .container {
     flex-direction: column;
-    padding: 0 !important;
+  }
+
+  form {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr;
+    width: 95%;
+    justify-items: center;
+  }
+
+  form>div{
+    width: 100%;
   }
 
   /* .img-portfolio {
