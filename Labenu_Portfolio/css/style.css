@@ -11,7 +11,7 @@ html {
 }
 
 body{
-  width: 98.7vw;
+  width: 98.5vw;
   margin: auto;
 }
 
@@ -59,7 +59,6 @@ p{
   position: fixed;
   bottom: 15px;
   right: 15px;
-  width: 15px;
   text-align: center;
 }
 .botao-topo a{
@@ -532,7 +531,7 @@ footer a:hover{
     justify-content: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    height: 10vh;
+    height: 15vh;
   }  
   .logo {
     display: flex;
