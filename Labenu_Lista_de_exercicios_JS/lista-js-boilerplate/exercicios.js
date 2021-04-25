@@ -449,7 +449,7 @@ const consultas = [
    { nome: "Márcia", dataDaConsulta: "04/05/2021" }
 ]
 
-function ordenaPorNome() { //Estava dando erro por causa do nome da função
+function ordenaPorNome() { 
    agendaConsultas = consultas.sort((pessoaA, pessoaB) => {
       if (pessoaA.nome > pessoaB.nome) {
          return 1
@@ -473,7 +473,7 @@ function formatarDataMMDDYYYY(data) {
    return arrayMesDiaAno
 }
 
-function ordenaPorData() { //Estava dando erro porque dizia que a função não existia. Adicionei essa função
+function ordenaPorData() { 
    ordenaConsultas = consultas.sort((dataA, dataB) => {
 
       const arrayData1 = formatarDataMMDDYYYY(dataA.dataDaConsulta)
